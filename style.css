@@ -44,7 +44,7 @@ td {
 
 button {
   height: 4rem;
-  width: 3rem;
+  width: 2.5rem;
   background-color: grey;
   border: solid 1px white;
   margin: 1px;
@@ -59,4 +59,11 @@ button {
   width: 1rem;
   height: 1rem;
   opacity: 0;
+}
+
+@media (max-width: 493px) {
+  button {
+    height: 4rem;
+    width: 2rem;
+  }
 }
