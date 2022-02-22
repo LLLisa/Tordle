@@ -100,9 +100,11 @@ let tiles = orderfy(tordleGreens, tordleYellows);
 
 //every click of any button changes the next field to its appropriate color
 let tileCounter = 0;
-const colorize = () => {
-  tiles[tileCounter].classList.remove('grey');
-  tileCounter++;
+const colorize = (ev) => {
+  if (ev.target.tagName === 'BUTTON') {
+    tiles[tileCounter].classList.remove('grey');
+    tileCounter++;
+  }
 };
 
 const test = () => {
