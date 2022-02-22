@@ -3,6 +3,7 @@ body {
   flex-flow: column;
   align-items: center;
   font-family: 'Clear Sans', 'Helvetica Neue', Arial, sans-serif;
+  box-sizing: border-box;
 }
 
 #header {
@@ -64,6 +65,10 @@ button {
 @media (max-width: 493px) {
   button {
     height: 4rem;
-    width: 2rem;
+    width: 8%;
+  }
+
+  .one-and-a-half {
+    width: 13%;
   }
 }
